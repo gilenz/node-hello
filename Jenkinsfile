@@ -7,7 +7,8 @@ pipeline {
     stages {
         stage('npm install') {
             steps {
-                sh 'apt install npm -y'
+                sh "apt-get update"
+                sh "apt-get install -y nodejs npm"
             }
         }
         stage('check npm') {
