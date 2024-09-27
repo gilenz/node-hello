@@ -5,9 +5,9 @@ pipeline {
         }
 }
     stages {
-        stage('Checkout') {
+        stage('npm install') {
             steps {
-                echo 'hello'
+                sh 'apt install npm'
             }
         }
         stage('check-dir') {
