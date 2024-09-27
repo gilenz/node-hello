@@ -7,7 +7,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git 'https://github.com/gilenz/node-hello.git'
+                echo 'hello'
             }
         }
         stage('check-dir') {
