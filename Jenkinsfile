@@ -7,12 +7,12 @@ pipeline {
     stages {
         stage('npm install') {
             steps {
-                sh 'apt install npm'
+                sh 'sudo apt install npm -y'
             }
         }
-        stage('check-dir') {
+        stage('check npm') {
             steps {
-                sh 'ls -la'
+                sh 'npm -v'
             }
         }
     }
